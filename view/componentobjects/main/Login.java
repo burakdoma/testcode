@@ -1,20 +1,20 @@
 package tr.com.t2.bkmaaile.view.componentobjects.main;
 
 import org.junit.Assert;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 /**
- * Created by burakdoma on 12/10/16.
+ * Created by burakdoma on 29/11/2016.
  */
 public class Login {
+
     final WebDriver driver;
 
     public Login(WebDriver driver) { this.driver = driver; }
 
-    @FindBy (id = "username")
+    @FindBy(id = "username")
     private WebElement kullaniciAdiAlani;
 
     @FindBy (id = "password")

@@ -1,21 +1,21 @@
 package tr.com.t2.bkmaaile.view.base;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 /**
- * Created by burakdoma on 12/10/16.
+ * Created by burakdoma on 29/11/2016.
  */
 public class BaseUITestCase {
 
-    public static String loginPage = "http://localhost:8080/market/";
-    public static String userGroupPage = "http://localhost:8080/market/admin/userGroups.xhtml";
-    public static String adayIslemleriPage = "http://localhost:8080/market/admin/user.xhtml";
-    public static String marketPage = "http://localhost:8080/market/admin/market.xhtml";
+    public static String loginCoinGeneratorPage = "http://localhost:8080/coingenerator/";
+    public static String marketManagement = "http://localhost:8080/coingenerator/coinadmin/marketManagement.xhtml";
+    public static String coinManagement = "http://localhost:8080/coingenerator/coinadmin/coinManagement.xhtml";
+    public static String coinGenerator = "http://localhost:8080/coingenerator/coinadmin/coinCreation.xhtml";
+    public static String operationHistory = "http://localhost:8080/coingenerator/coinadmin/story.xhtml";
 
-    public static String dogruEposta = "seyda.gunduz@t2.com.tr";
+    public static String dogruEposta = "coinadmin@t2.com.tr";
     public static String hataliEposta = "hatali";
 
     public static String dogruSifre = "bkm";
@@ -34,5 +34,6 @@ public class BaseUITestCase {
     public void afterMethod() {
         driver.quit();
     }
+
 
 }
